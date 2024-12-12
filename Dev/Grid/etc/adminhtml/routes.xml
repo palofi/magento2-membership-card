@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
+    <router id="admin">
+        <route id="dev_grid" frontName="dev_grid">
+            <module name="Dev_Grid" before="Magento_Backend" />
+        </route>
+        <route id="dev_grid_delete" frontName="dev_grid_delete">
+            <module name="Dev_Grid" before="Magento_Backend" />
+        </route>
+        <route id="dev_grid_create" frontName="dev_grid_create">
+            <module name="Dev_Grid" before="Magento_Backend" />
+        </route>
+    </router>
+</config>

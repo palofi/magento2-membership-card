@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Dev_Grid::home" title="Membership Cards" module="Dev_Grid" sortOrder="1000" parent="Magento_Customer::customer" resource="Dev_Grid::membership_card" action="dev_grid/index/index"/>
+    </menu>
+</config>

@@ -1,0 +1,15 @@
+{
+    "membership_cards_entity": {
+        "column": {
+            "entity_id": true,
+            "validFrom": true,
+            "validTo": true,
+            "status": true,
+            "customer_id": true
+        },
+        "constraint": {
+            "PRIMARY": true,
+            "MEMBERSHIP_CARDS_ENTITY_CUSTOMER_ID_CUSTOMER_ENTITY_ENTITY_ID": true
+        }
+    }
+}

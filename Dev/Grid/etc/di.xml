@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Dev\Grid\Ui\DataProvider\MembershipCard\MembershipCardDataProvider">
+        <plugin name="dev_grid_attributes" type="Dev\Grid\Plugin\AddAttributesToUiDataProvider" />
+    </type>
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="dev_grid_membership_card_data_source" xsi:type="string">DevGridMembershipCardCollection</item>
+            </argument>
+        </arguments>
+    </type>
+
+    <virtualType name="DevGridMembershipCardCollection" type="Dev\Grid\Ui\DataProvider\MembershipCard\Listing\Collection">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">membership_cards_entity</argument>
+            <argument name="resourceModel" xsi:type="string">Dev\Grid\Model\ResourceModel\MembershipCard</argument>
+        </arguments>
+    </virtualType>
+</config>
